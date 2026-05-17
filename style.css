@@ -552,6 +552,7 @@ body {
   display: flex;
   flex-wrap: wrap;
   gap: 6px;
+  margin-bottom: 14px;
 }
 
 .stack-dot {
@@ -562,6 +563,34 @@ body {
   border: 1px solid var(--border);
   border-radius: var(--r-sm);
   padding: 2px 9px;
+}
+
+/* GitHub link button */
+.proj-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: var(--teal);
+  background: var(--teal-dim);
+  border: 1px solid rgba(99, 220, 185, 0.3);
+  border-radius: var(--r-sm);
+  padding: 6px 14px;
+  text-decoration: none;
+  transition: background 0.25s var(--ease), border-color 0.25s var(--ease), transform 0.2s var(--ease), box-shadow 0.25s var(--ease);
+}
+
+.proj-link:hover {
+  background: rgba(99, 220, 185, 0.22);
+  border-color: rgba(99, 220, 185, 0.55);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(99, 220, 185, 0.15);
+}
+
+.proj-link svg {
+  flex-shrink: 0;
+  fill: currentColor;
 }
 
 /* Coming soon placeholder */
